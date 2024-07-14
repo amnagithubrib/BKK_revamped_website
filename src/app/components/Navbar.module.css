@@ -1,0 +1,49 @@
+/* src/app/components/Navbar.module.css */
+.navbar {
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.arrowIcon {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.weatherIcon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.customDropdown .dropdown-toggle::after {
+  display: none; /* Hide the default dropdown arrow */
+}
+
+.customDropdown .dropdown-menu {
+  padding: 10px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.weatherIconDropdown {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.weatherInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.temperatureText {
+  font-size: 0.9rem;
+  color: #555;
+}

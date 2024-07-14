@@ -1,0 +1,36 @@
+/* components/Form.module.css */
+
+.fullWidthContainer {
+  width: 100%;
+  background-color: #f6ffee;
+}
+
+.customContainer {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.imgFluid {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Ensure rounded corners for the image */
+}
+
+/* Adjust padding for responsiveness */
+@media (max-width: 992px) {
+  .customContainer {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customContainer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .customContainer {
+    padding: 10px;
+  }
+}

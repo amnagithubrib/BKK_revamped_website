@@ -1,0 +1,79 @@
+.slider {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    position: relative;
+    min-width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-snap-align: center;
+}
+
+.greenOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.5); /* Green overlay with 50% opacity */
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.vectorImageLeft,
+.vectorImageRight {
+    display: inline-block;
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.vectorImageLeft img,
+.vectorImageRight img {
+    width: 100%; /* Ensure image fills container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+    display: inline-block;
+    margin: 0 20px; /* Adjust spacing between text and images */
+    color: white; /* Text color */
+    font-size: 2rem;
+}
+
+.highlight {
+    color: rgb(252, 252, 66); /* Yellow color for the word "Agriculture" */
+}
+
+@media (max-width: 768px) {
+    .slide {
+        height: 40vh;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        height: 30vh;
+    }
+    .text {
+        font-size: 1rem;
+    }
+}
